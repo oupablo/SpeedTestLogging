@@ -11,7 +11,7 @@ import SpeedTestLogging
 
 results = speedtest.SpeedtestResults
 
-Logging = SpeedTestLogging
+Logging = SpeedTestLogging.SpeedTestLogging()
 
 
 #start by running the upload and download test
@@ -19,8 +19,5 @@ results = Logging.executeTest()
 
 
 #log the results into a local file
-Logging.logResults (results)
+#Logging.logResults (results)
 
-
-#email the results if below a certain threshhold
-Logging.emailResults(results)
